@@ -95,4 +95,40 @@ listaAmigos.appendChild(li);
 
 /*Agrega el elemento li recién creado a la lista no ordenada (ul) en la interfaz.*/
 
+<h6>function sortearAmigo() {</h6>
+
+    if(nombresAmigos.length === 0) {
+
+        alert("no hay amigos para ser sorteados");
+        return;
+    }
+
+    const indiceAleatorio = Math.floor(Math.random() * nombresAmigos.length);
+    const amigoSorteado = nombresAmigos[indiceAleatorio];
+
+    document.getElementById("resultado").innerHTML = `Amigo sorteado: ${amigoSorteado}`;
+} 
+
+/*Con esta función vamos a encargarnos de la elección aleatoria del sorteo en el juego*/
+
+function sortearAmigo() {
+if (nombresAmigos.length === 0) { 
+    alert("no hay amigos para ser sorteados");
+    return;
+  }
+ }
+
+/*Comprueba si el arreglo nombresAmigos está vacío. Si no hay nombres para sortear, muestra una alerta y detiene la ejecución con return.*/
+
+const indiceAleatorio = Math.floor(Math.random() * nombresAmigos.length);
+
+/*Genera un número aleatorio entero entre 0 y el tamaño del arreglo nombresAmigos menos uno. Este número representa un índice válido del arreglo.*/
+
+const amigoSorteado = nombresAmigos[indiceAleatorio];
+
+/*Usa el índice aleatorio generado para obtener un nombre del arreglo nombresAmigos.*/
+
+document.getElementById("resultado").innerHTML = \Amigo sorteado: ${amigoSorteado}\;
+
+/*Actualiza el contenido del elemento con id="resultado" en la interfaz para mostrar el nombre del amigo sorteado.*/
 
