@@ -17,3 +17,18 @@ function agregarAmigo() {
     
     mostrarAmigos()
 }
+
+function mostrarAmigos() {
+
+    const listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = "";
+
+    for (let i = 0; i < nombresAmigos.length; i++) {
+
+        let li = document.createElement("li");
+        li.textContent = nombresAmigos[i]
+        listaAmigos.appendChild(li);
+
+    }
+
+}
