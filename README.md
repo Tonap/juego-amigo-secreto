@@ -52,3 +52,47 @@ document.getElementById("amigo").value = "";
 mostrarAmigos();
 
 /*Llama a la función mostrarAmigos() para actualizar la lista visual en la interfaz.*/
+
+<h5>function mostrarAmigos() {</h5>
+
+    const listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = "";
+
+    for (let i = 0; i < nombresAmigos.length; i++) {
+
+        let li = document.createElement("li");
+        li.textContent = nombresAmigos[i]
+        listaAmigos.appendChild(li);
+
+    }
+
+}
+
+/*Con esta función registramos cada nombre en la lista de origen y la mostramos:*/
+
+function mostrarAmigos()
+const listaAmigos = document.getElementById("listaAmigos");
+
+/*Obtiene el elemento HTML con el id="listaAmigos" donde se mostrará la lista de amigos.*/
+
+listaAmigos.innerHTML = "";
+
+/*Vacía el contenido actual de la lista para evitar duplicaciones al volver a renderizarla.*/
+
+for (let i = 0; i < nombresAmigos.length; i++) { ... }
+
+/*Recorre el arreglo nombresAmigos para acceder a cada nombre almacenado.*/
+
+let li = document.createElement("li");
+
+/*Crea un nuevo elemento li (elemento de lista).*/
+
+li.textContent = nombresAmigos[i];
+
+/*Asigna el contenido del nombre actual del arreglo a este elemento li.*/
+
+listaAmigos.appendChild(li);
+
+/*Agrega el elemento li recién creado a la lista no ordenada (ul) en la interfaz.*/
+
+
